@@ -13,6 +13,7 @@ public class Deck{
 
 	public static final int NUMCARDS = 52;
 	public static String[] SUITS = "CLUBS HEARTS DIAMONDS SPADES".split(" ");
+    
 	
 	private List<Card> cards;
 	private int top;
@@ -21,7 +22,8 @@ public class Deck{
             top = 51;
                 for (int s = 0; s <SUITS.length; s++){
                     for (int c =1; c < 14; c++){
-                        cards.add(new Card(SUITS[s], c));
+                        s = 
+                        cards.add(new Card(s, c));
                     }
                 }
         }
