@@ -4,7 +4,7 @@ package ElevensPackage;
 //www.apluscompsci.com
 //Name -
 
-import Eleven.Deck;
+import ElevensPackage.Deck;
 import static java.lang.System.*;
 
 public class DeckRunner
