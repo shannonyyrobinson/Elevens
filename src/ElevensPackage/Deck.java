@@ -15,16 +15,16 @@ public class Deck{
 	public static String[] SUITS = "CLUBS HEARTS DIAMONDS SPADES".split(" ");
     
 	
-	private List<Card> cards;
+	private List<Card> cards = new ArrayList<Card>();
 	private int top;
         
         public Deck(){
-            top = 51;
                 for (String s: SUITS){
                     for (int c = 1; c < 14; c++){
                         cards.add( new BlackJackCard(s, c));
                     }
                 }
+                top = 51;
         }
         
         public Card dealCard(){
