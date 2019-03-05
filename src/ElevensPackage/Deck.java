@@ -20,35 +20,21 @@ public class Deck{
         
         public Deck(){
             top = 51;
-                for (int s = 0; s <SUITS.length; s++){
-                    for (int c =1; c < 14; c++){
-                        s = 
-                        cards.add(new Card(s, c));
+                for (String s: SUITS){
+                    for (int c = 1; c < 14; c++){
+                        cards.add( new BlackJackCard(s, c));
                     }
                 }
         }
         
         public Card dealCard(){
-            return cards.get(top);
+            Card t = cards.get(top);
+            top--;
+            return t;
         }
         
         public void shuffle(){
             Collections.shuffle(cards);
             top = 51;
         }      
-        
-   //make a Deck constructor
-   	//refer cards to new ArrayList
-   	//set top to the top of the deck 51
-   	
-   	//loop through all suits
-   		//loop through all faces 1 to 13
-   			//add a new TwentyOneCard to the deck
-
-   
-   //make a dealCard() method that returns the top card
-   
-   //write a shuffle() method
-   	//use Colletions.shuffle
-   	//reset the top card 
 }
